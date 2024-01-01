@@ -2,11 +2,6 @@ body{
     margin: 0;
 }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(LeagueGothic-Regular.otf);
-}
-  
 
 #container{
     display: flex;
