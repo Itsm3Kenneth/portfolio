@@ -1,38 +1,3 @@
-body{
-    margin: 0;
-}
-
-
-#container{
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-around;
-    align-items: center;
-    max-height: 150px;
-    height: 150px;
-    border: solid 1px;
-    background-color: #12161c;
-    padding: 0 0 20px ;
-}
-a, a:link, a:visited, a:active{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-#moon_img{
-    width: 120px;
-    height: 120px;
-    border-radius: 25%;
-    margin-right: 40%;
-}
- #home{
-    margin-left: 15%;
- }
 
 .welcome_container{
     display: flex;
@@ -43,13 +8,20 @@ a:hover{
 }
 
 .welcome{
-    background-color: antiquewhite;
     font-size: 40px;
     text-align: center;
     display: inline-block;
 }
 
+.description{
+    margin-top: -50px;
+}
+
 .lan_img{
+    background-color: aliceblue;
+    border-radius: 30%;
     width: 200px;
     display: inline-block;
+    margin: 0 80px;
+    padding: 10px 60px;
 }
