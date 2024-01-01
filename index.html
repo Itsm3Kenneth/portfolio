@@ -8,22 +8,29 @@
     <link href="index_style.css" rel="stylesheet" />
     <title>Portfilo</title>
   </head>
-
+  <nav>
+    <div id="container">
+      <img src="moon.jpg" id="moon_img" />
+      <a id="home" href="portfolio_index.html">HOME</a>
+      <a id="about">ABOUT</a>
+      <a id="projects">PROJECTS</a>
+      <a id="contact">CONTACT</a>
+    </div>
+  </nav>
   <body>
-    <nav>
-      <div id="container">
-        <img src="moon.jpg" id="moon_img">
-        <a id="home">HOME</a>
-        <a id="about">ABOUT</a>
-        <a id="projects">PROJECTS</a>
-        <a id="contact">CONTACT</a>
-      </div>
-    </nav>
     <main>
-      <header>
-        <h1>Welcome to my portfolio!</h1>
-      </header> 
-      <p>Visit other pages to explore more about me.</p>
+      <div class="welcome_container">
+        <div class="welcome">
+          <header>
+            <h1>Welcome to my portfolio!</h1>
+          </header>
+          <p class="description">Visit other pages to explore more about me.</p>
+        </div>
+        <div>
+          <img class="lan_img" src="html_logo.png" alt="html logo" />
+          <img class="lan_img" src="css_logo.png" alt="css_logo" />
+        </div>
+      </div>
     </main>
   </body>
 </html>
