@@ -4,25 +4,25 @@
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    margin: 10em 0;
+    margin: 10em 0em;
 }
 
 .welcome{
-    font-size: 40px;
+    font-size: clamp(0.5em, 2vw, 3rem);   
     text-align: center;
     display: inline-block;
     font-family: Crete Rounds;
+
 }
 
-.description{
-    margin-top: -50px;
-}
 
 .lan_img{
+    position: relative;
     background-color: aliceblue;
     border-radius: 30%;
-    width: 200px;
     display: inline-block;
-    margin: 0 80px;
-    padding: 10px 60px;
+    margin: 0 10%;
+    padding: 1% 6%;
+    width: clamp(10%, 17%, 22%);
+    height: auto;
 }

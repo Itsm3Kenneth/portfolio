@@ -22,10 +22,11 @@ body{
 }
 a, a:link, a:visited, a:active{
     color: white;
-    font-size: 20px;
+    font-size: clamp(15px, 1.5vw, 50px);
     text-decoration: none;
     font-family: "Crete Rounds";
-    font-weight: 100;
+    margin-right: clamp(5px, 2rem, 5rem);
+    
 }
 
 a:hover{
@@ -36,8 +37,9 @@ a:hover{
     width: 120px;
     height: 120px;
     border-radius: 25%;
-    margin-right: 40%;
+    margin-right: clamp(1px, 40%, 45%);
 }
- #home{
-    margin-left: 15%;
- }
+
+#home{
+    margin-left: clamp(5px, 2rem, 5rem);
+}
