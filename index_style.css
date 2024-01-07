@@ -20,9 +20,9 @@
     position: relative;
     background-color: aliceblue;
     border-radius: 30%;
-    display: inline-block;
+    display: block;
     margin: 0 10%;
-    padding: 1% 6%;
-    width: clamp(10%, 17%, 22%);
-    height: auto;
+    padding: 1% 10%;
+    width: 40%;
+    height: 50%;
 }
