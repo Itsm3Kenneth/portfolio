@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kenneth Ye" />
     <meta name="description" content="Personal portfolio displaying projects" />
-    <link href="index_style.css" rel="stylesheet" />
-    <link href="navbar_style.css" rel="stylesheet" />
+    <link href="css/index_style.css" rel="stylesheet" />
+    <link href="css/navbar_style.css" rel="stylesheet" />
     <title>Portfilo</title>
   </head>
   <nav>
     <div id="container">
       <img src="images/dev-icon.png" id="dev_img" alt="main olgo for nav bar"/>
-      <a id="home" href="index.html">HOME</a>
-      <a id="about" href="about.html">ABOUT</a>
-      <a id="projects" href="projects.html">PROJECTS</a>
-      <a id="contact" href="contact.html">CONTACT</a>
+      <input class="search-bar" type="search" placeholder="SEARCH"/>
+      <a id="home" onclick="home()">HOME</a>
+      <a id="about" onclick="about()">ABOUT</a>
+      <a id="projects" onclick="projects()">PROJECTS</a>
+      <a id="contact" onclick="contact()">CONTACT</a>
+      <img class="list-icon" src="images/list-icon.png" onclick="list-open()">
+      <script src="Js/nav-bar.js"></script>
     </div>
   </nav>
   <body>
@@ -27,11 +30,13 @@
           </header>
           <p class="description">Visit other pages to explore more about me.</p>
         </div>
-        <div>
-          <img class="lan_img" src="images/html_logo.png" alt="html logo" />
+        <div class="lan-wrapper">
+          <img class="lan_img html" src="images/html_logo.png" alt="html logo" />
+          <img class="lan_img css" src="images/css_logo.png" alt="css_logo" />
+          <img class="lan_img js" src="images/js_logo.png" alt="css_logo" />
         </div>
         <div>
-          <img class="lan_img" src="images/css_logo.png" alt="css_logo" />
+          
         </div>
       </div>
     </main>
