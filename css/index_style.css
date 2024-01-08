@@ -1,0 +1,71 @@
+.welcome_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10em 0em;
+}
+
+.welcome {
+  font-size: 2rem;
+  text-align: center;
+  display: inline-block;
+  font-family: Crete Rounds;
+  transition: all 0.4s ease;
+}
+
+.welcome:hover {
+  font-size: 2.5rem;
+}
+
+.lan_img {
+  position: relative;
+  background-color: aliceblue;
+  border-radius: 30%;
+  display: block;
+  margin: 10% 0;
+  padding: 1% 7%;
+  width: 15%;
+  transition: all 0.2s;
+}
+
+.lan_img:hover {
+  transform: translateY(-30px);
+}
+
+.lan-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  gap: 5em;
+}
+
+@media (width < 1300px) {
+  .welcome_container {
+    flex-wrap: wrap;
+  }
+
+  .lan-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .lan_img {
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 30%;
+    display: block;
+    width: 50%;
+    margin: 5% 0;
+  }
+
+  .html,
+  .css,
+  .js {
+    width: 12%;
+    padding: 1% 6%;
+  }
+}
