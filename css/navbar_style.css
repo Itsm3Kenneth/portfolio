@@ -2,86 +2,60 @@
     font-family: "Crete Rounds";
     src: url(fonts/CreteRound-Regular.ttf) format("truetype");
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
     overflow-x: hidden;
 }
 
+.about{
+    margin-left: 600px;
+}
 
 #container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 150px;
-    background-image: linear-gradient(#031513, #162421);
-    padding: 20px 0;
-    width: 100%;
+    background: #02040F;
+    padding: 20px min(1%, 30px);
+    box-sizing: border-box;
 }
-a, a:link, a:visited, a:active{
-    color:whitesmoke;
-    font-size: 100%;
-    text-decoration: none;
+.btn, .btn:link, .btn:visited{
+    color:#02040F;
+    font-size: 130%;
+    background: aliceblue;
     font-family: "Crete Rounds";
-    padding: 15px;
+    padding: 20px min(2%, 30px);
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 55px; 
+    transition: transform 0.2s; 
+    border: none;
 }
 
-a:hover{
-    border: 3px solid #5D7D8E;
-    border-radius: 15px; 
-    background: #5D7D8E;
-    color: whitesmoke;
-    cursor: pointer;
+.btn:hover{ 
+    transform: scale(120%);
 }
 
 .search-bar{
-    background-color: #162421;
-    height: 10px;
-    width: 30%;
-    border: 2px solid whitesmoke;
-    padding: 1.5% 1%;
-    border-radius: 15px;
-    color: whitesmoke;
-    font-size: 20px;
     opacity: 0;
 }
-
-.search-bar:hover{
-    background-color: whitesmoke;
-    color: #162421;
-    border: 1px solid #162421;
-}
-
-.list-icon{
-    opacity: 0;
-    position: absolute;
-    height: 50px;
-    border: 0;
-}
-
-.list-icon:hover{
-    cursor: pointer;
-}
-
-@media (width < 1300px){
+@media (width < 1400px){
     #container{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
-    .search-bar{
-        position: absolute;
+    .about{
+        margin-left: 0;
     }
 
-    a, a:link, a:visited, a:active{
-        opacity: 100%;
-    }
-    .list-icon{
-        position: absolute;
-        opacity: 0%;
 
-    }
+
     
 }

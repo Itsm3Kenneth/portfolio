@@ -1,71 +1,39 @@
-.welcome_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-  margin: 10em 0em;
+body {
+  background: #002642;
+  color: aliceblue;
+  font-family: "Crete Rounds";
+}
+
+.gold {
+  color: #e59500;
 }
 
 .welcome {
+  color: aliceblue;
   font-size: 2rem;
-  text-align: center;
-  display: inline-block;
+  justify-content: center;
   font-family: Crete Rounds;
   transition: all 0.4s ease;
+  padding: 150px;
+  width: 50%;
 }
 
 .welcome:hover {
   font-size: 2.5rem;
 }
 
-.lan_img {
-  position: relative;
-  background-color: aliceblue;
-  border-radius: 30%;
-  display: block;
-  margin: 10% 0;
-  padding: 1% 7%;
-  width: 15%;
-  transition: all 0.2s;
-}
-
-.lan_img:hover {
-  transform: translateY(-30px);
-}
-
-.lan-wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-  gap: 5em;
-}
-
-@media (width < 1300px) {
+@media (width < 1400px) {
   .welcome_container {
     flex-wrap: wrap;
   }
 
-  .lan-wrapper {
-    display: flex;
-    flex-direction: row;
+  .welcome {
+    font-size: 2rem;
+    left: 0;
+  }
+
+  .welcome:hover {
+    font-size: 2.7rem;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .lan_img {
-    position: relative;
-    background-color: aliceblue;
-    border-radius: 30%;
-    display: block;
-    width: 50%;
-    margin: 5% 0;
-  }
-
-  .html,
-  .css,
-  .js {
-    width: 12%;
-    padding: 1% 6%;
   }
 }

@@ -1,37 +1,81 @@
-header {
-  font-family: Crete Rounds;
-  text-align: center;
+body{
+  box-sizing: content-box;
 }
 
-.italic {
-  font-style: italic;
-}
-
-.tag {
-  font-size: 15px;
-  margin-top: -10px;
-}
-
-.pfp {
-  display: block;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  border-radius: 45px;
-}
-
-
-.aboutme-container {
+.about-section {
+  background-color: #f0f8ff;
   display: flex;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  font-family: sans-serif;
+  color: #002642;
+  padding: 95px;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 
-.description {
-  text-align: center;
-  font-size: 20px;
+.about-header {
+  font-size: 50px;
+  margin-bottom: -20px;
+  color: #840032;
+}
+
+.about-con {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  width: 40%;
+}
+
+.lan-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lan_img {
+  position: relative;
+  border-radius: 30%;
+  width: max(12%, 170px);
+  height: 80%;
+  transition: all 0.2s;
+  margin-top: 5%;
+}
+
+.lan_img:hover {
+  transform: translateY(-30px);
+  scale: 120%;
+}
+
+@media (width < 1400px) {
+  .about-section {
+    display: block;
+    text-align: center;
+  }
+  .about-con {
+    font-size: 30px;
+    width: 100%;
+  }
+  .about-header {
+    font-size: 50px;
+    margin-bottom: -15px;
+  }
+
+  .lan-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .lan_img {
+    position: relative;
+    border-radius: 30%;
+    display: block;
+    width: 50%;
+    margin: 5% 100px;
+  }
+
+  .html,
+  .css,
+  .js {
+    scale: 1.5;
+    width: 12%;
+  }
 }

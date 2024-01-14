@@ -7,38 +7,53 @@
     <meta name="description" content="Personal portfolio displaying projects" />
     <link href="css/index_style.css" rel="stylesheet" />
     <link href="css/navbar_style.css" rel="stylesheet" />
+    <link href="css/about.css" rel="stylesheet" />
+    <link href="css/projects.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
     <title>Portfilo</title>
   </head>
   <nav>
     <div id="container">
-      <img src="images/dev-icon.png" id="dev_img" alt="main olgo for nav bar"/>
-      <input class="search-bar" type="search" placeholder="SEARCH"/>
-      <a id="home" onclick="home()">HOME</a>
-      <a id="about" onclick="about()">ABOUT</a>
-      <a id="projects" onclick="projects()">PROJECTS</a>
-      <a id="contact" onclick="contact()">CONTACT</a>
-      <img class="list-icon" src="images/list-icon.png" onclick="list-open()">
-      <script src="Js/nav-bar.js"></script>
+      <img src="images/dev-icon.png" id="dev_img" alt="main olgo for nav bar" />
+      <a class="about btn" href="#about-p">ABOUT</a>
+      <a class="projects btn">PROJECTS</a>
+      <a class="contact btn">CONTACT</a>
     </div>
   </nav>
   <body>
     <main>
-      <div class="welcome_container">
         <div class="welcome">
           <header>
             <h1>Welcome to my portfolio!</h1>
           </header>
-          <p class="description">Visit other pages to explore more about me.</p>
+          <h4 class="description">
+            Visit <span class="gold">other pages</span> to
+            <span class="gold">explore</span>
+            more about me.
+          </h4>
+        </div>
+    </main>
+    <section>
+      <div class="about-section">
+        <div class="about-con">
+          <h1 class="about-header">ABOUT</h1>
+          <p id="about-p">
+            I'm Kenneth, a 16yr student passionate about Front End Development.
+            I have a strong knowledge in the following coding languages HTML,
+            CSS, and Javascript. I strive to bring interavtive and stylish ideas
+            to life.
+          </p>
         </div>
         <div class="lan-wrapper">
-          <img class="lan_img html" src="images/html_logo.png" alt="html logo" />
+          <img
+            class="lan_img html"
+            src="images/html_logo.png"
+            alt="html logo"
+          />
           <img class="lan_img css" src="images/css_logo.png" alt="css_logo" />
           <img class="lan_img js" src="images/js_logo.png" alt="css_logo" />
         </div>
-        <div>
-          
-        </div>
       </div>
-    </main>
+    </section>
   </body>
 </html>
